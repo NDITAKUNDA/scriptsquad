@@ -1,0 +1,39 @@
+/* Mouse icon container */
+.scroll-icon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Mouse body */
+.mouse {
+    width: 25px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* Mouse wheel (scroll effect) */
+.wheel {
+    width: 4px;
+    height: 8px;
+    background: white;
+    border-radius: 2px;
+    position: absolute;
+    top: 8px;
+    left: 45%;
+    transform: translateX(-50%);
+    animation: wheel-animation 1.5s ease-in-out infinite;
+}
+
+/* Animation for the wheel */
+@keyframes wheel-animation {
+    0%, 100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+}
