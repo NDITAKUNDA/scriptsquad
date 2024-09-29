@@ -6,7 +6,12 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'signika': ['Signika Negative', 'sans-serif'],
+        'gurajada': ['Gurajada', 'sans-serif']
+      }
+    },
   },
   plugins: [
     require('preline/plugin'),

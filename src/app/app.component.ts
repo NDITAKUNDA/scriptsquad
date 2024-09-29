@@ -5,6 +5,7 @@ import { Router, Event, NavigationEnd } from '@angular/router';
 import { IStaticMethods } from 'preline/preline';
 import { NavbarComponent } from "./navbar/navbar.component";
 import { FooterComponent } from "./footer/footer.component";
+
 declare global {
   interface Window {
     HSStaticMethods: IStaticMethods;
@@ -32,5 +33,6 @@ export class AppComponent {
         }, 100);
       }
     });
+  
   }
 }
